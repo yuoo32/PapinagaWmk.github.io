@@ -149,6 +149,15 @@ p{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    color: #DBD3D3;
+}
+
+
+.kontak-dpl{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -158,8 +167,9 @@ p{
 }
 
 .kartu-kontak img{
-    width: 80%;
-    border-radius: 50%;
+    width: 200px;
+    border-radius: 20%;
+    margin-top: 20px;
 }
 
 .kartu-kontak p{
@@ -217,24 +227,24 @@ h4{
 
 @media screen and(max-width: 991.98px){
     .wrapper{
-        width: 90%;
+        width: 100%;
     }
     .logo a{
         display: block;
         width: 100%;
         text-align: center;
     }
-    nav.menu{
+    nav .menu{
         width: 100%;
         margin: 0;
     }
-    nav.menu ul{
+    nav .menu ul{
         text-align: center;
         margin: auto;
         line-height: 60px;
     }
-    nav.menu ul li{
-        display: block;
+    nav .menu ul li{
+        display: inline-block;
         float: none;
     }
     section{
@@ -242,6 +252,11 @@ h4{
     }
     section img{
         display: block;
+        width: 100%;
+        height: auto;
+    }
+    .kartu-kontak{
+        width: 50%;
     }
     
 }
