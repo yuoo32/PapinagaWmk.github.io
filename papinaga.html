@@ -75,9 +75,60 @@
           <section id="wiring">
             <div class="kolom">
                 <p class="deskripsi">Desain Wiring</p>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolores? Nihil veniam, eveniet optio harum voluptate iure odio assumenda placeat.</p>
+                <h2>Rangkaian Elektrikal</h2>
+                <div class="tengah">
+                    <img src="wiring.jpg"width="100%">
+                </div>
+                <h2>a. Panel Surya</h2>
+                <p>Fungsi: Mengubah energi matahari menjadi listrik (DC). Panel surya ini menghasilkan listrik yang kemudian dialirkan ke solar charger untuk mengisi baterai.
+                </p>
+                <p>Proses: Panel ini terhubung langsung ke solar charger, di mana listrik yang dihasilkan dari cahaya matahari akan diatur oleh solar charger sebelum dikirim ke baterai untuk penyimpanan.
+                </p>
+                <h2>b. Solar Charger</h2>
+                <p>Fungsi: Mengatur arus listrik yang berasal dari panel surya dan mencegah baterai mengalami overcharge atau kelebihan muatan.
+                </p>
+                <p>Proses: Input dari panel surya diterima dan dikonversi ke arus yang lebih aman untuk mengisi baterai.
+                </p>
+                <p>Mengelola pengisian baterai serta mendistribusikan daya ke perangkat lain seperti motor servo, ESP8266, dan tampilan LED P10.
+                </p>
+                <h2>c. Baterai</h2>
+                <p>Fungsi: Menyimpan energi listrik yang dihasilkan dari panel surya untuk digunakan saat diperlukan, khususnya ketika tidak ada sinar matahari.
+                </p>
+                <p>Proses: Baterai ini berfungsi sebagai penyedia daya utama untuk seluruh sistem ketika panel surya tidak menghasilkan cukup daya, seperti saat malam hari atau cuaca mendung.
+                </p>
+                <h2>d. Konverter</h2>
+                <p>Fungsi: Mengubah tegangan baterai ke level yang dibutuhkan oleh perangkat lain di sistem.
+                </p>
+                <p>Proses: Dalam beberapa kasus, baterai mungkin menghasilkan tegangan yang lebih tinggi atau lebih rendah dari yang dibutuhkan oleh komponen seperti ESP8266 atau servo. Konverter ini menyesuaikan tegangan sesuai kebutuhan komponen yang berbeda, sehingga mereka dapat bekerja dengan stabil.
+                </p>
+                <h2>e. Motor Servo DS3225</h2>
+                <p> Fungsi: Motor servo digunakan untuk menggerakkan sesuatu secara presisi, seperti membuka atau menutup penutup, menggerakkan panel surya, atau mekanisme lain yang membutuhkan kontrol pergerakan.
+                </p>
+                <p>Proses: Motor ini terhubung ke rangkaian kontrol dari ESP8266 untuk menerima perintah gerak berdasarkan sinyal tertentu, seperti kondisi cahaya yang diukur oleh sensor cahaya (intensitas). Motor ini dapat digerakkan ke sudut tertentu dengan presisi, biasanya digunakan untuk aplikasi mekanik yang presisi.
+                </p>
+                <h2>f. Sensor Cahaya (TEMT6000) </h2>
+                <p>Fungsi: Mengukur intensitas cahaya yang ada di lingkungan sekitar dan mengirimkan data tersebut ke ESP8266.
+                </p>
+                <p>Proses: Sensor ini terhubung ke ESP8266 melalui pin output (OUT), yang mengirim sinyal analog terkait dengan intensitas cahaya.
+                </p>
+                <p>ESP8266 akan memproses informasi ini dan mungkin menggunakan data tersebut untuk mengontrol perangkat lain seperti motor servo (misalnya menggerakkan panel surya ke arah yang lebih terang) atau menampilkan nilai intensitas cahaya pada LED P10.
+                </p>
+                <h2>g. ESP8266</h2>
+                <p>Fungsi: Sebagai pusat kontrol dan komunikasi nirkabel dalam sistem. ESP8266 menghubungkan komponen seperti sensor cahaya, motor servo, dan LED display, serta bisa mengirim atau menerima data melalui jaringan Wi-Fi.
+                </p>
+                <p>Proses: ESP8266 menerima input dari sensor cahaya dan memproses data untuk menentukan langkah yang harus diambil, seperti menampilkan hasil di LED P10 atau menggerakkan motor servo.
+                </p>
+                <p>Selain itu, ESP8266 bisa mengirimkan data ke server atau aplikasi melalui Wi-Fi untuk memantau dan mengendalikan sistem dari jarak jauh.
+                </p>
+                <h2>h. LED Display P10</h2>
+                <p>Fungsi: Menampilkan informasi dalam bentuk visual, seperti angka, teks, atau simbol, yang dapat diprogram melalui ESP8266.
+                </p>
+                <p>Proses: P10 display menerima sinyal dari ESP8266 untuk menampilkan data yang dibutuhkan, misalnya intensitas cahaya yang terdeteksi oleh sensor.
+                </p>
+                <p>LED ini juga bisa digunakan untuk menampilkan pesan atau status operasional sistem secara real-time.
+                </p>
 
+                
             </div>
           </section>
         <!-- Untuk Flowchart -->
