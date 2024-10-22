@@ -71,6 +71,8 @@ section{
 .kolom{
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .kolom .deskripsi{
@@ -111,6 +113,7 @@ a.tbl-biru{
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
 
 }
 
